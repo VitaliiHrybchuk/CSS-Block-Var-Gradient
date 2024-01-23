@@ -60,6 +60,9 @@ p{color: var(--main-color);}
   border: 1px solid magenta;
   font-size: 20px;
   width: 100px;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .grad-conteiner > div{
   width: 70%;
