@@ -1,0 +1,11 @@
+nav{
+  text-align: center;
+  margin: auto;
+}
+ul > li{
+  margin: auto;
+  list-style: none;
+}
+.brick{
+  display: inline-block;
+}
