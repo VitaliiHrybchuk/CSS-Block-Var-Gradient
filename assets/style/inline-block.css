@@ -1,11 +1,99 @@
+:root{
+  color: blue;
+  --el-numbers:4;
+  --main-color:rgb(175, 225, 57);
+  --brick-height: 100px;
+  --brick-border-thick: 3px;
+  --brick-font-size: 20px;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+}
 nav{
   text-align: center;
   margin: auto;
+  
 }
 ul > li{
   margin: auto;
   list-style: none;
-}
+  color: var(--main-color);
+  }
+  a{
+    color: var(--main-color);
+  }
 .brick{
   display: inline-block;
+  /* width: calc(100%/var(--el-numbers)); */
+  border: var(--brick-border-thick) solid red;
+  /* margin: 10px; */
+  padding: calc((var(--brick-height) - var(--brick-font-size) - var(--brick-border-thick)) / 2);
+  /* height: var(--brick-height); */
+  min-width: 20%;
+  max-width: 40%;
+  height: min(50px, 200px, 100px, 300px);
+  font-size: var(--brick-font-size);
+  margin-bottom: 50px;
+  background-color: var(--main-color);
+}
+span{
+border: 2px solid blue;
+}
+.brick-container{
+  width: 100%;
+  font-size: 0;
+}
+/*  */
+  /* display: none; */
+  /* visibility: hidden; */
+p{color: var(--main-color);}
+.out-div{
+  border: 3px solid brown;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+.inner-div{
+  border: 1px solid magenta;
+  font-size: 20px;
+  width: 100px;
+}
+.grad-conteiner > div{
+  width: 70%;
+  height: 100px;
+  border: 3px solid green;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 50px;
+}
+#gradient1{
+  background: linear-gradient(teal,cyan, aqua);
+}
+#gradient2{
+  background: linear-gradient(to left, teal,cyan, aqua);
+}
+#gradient3{
+  background: linear-gradient(to top left, red,cyan, aqua);
+}
+#gradient4{
+  background: linear-gradient(-45deg, yellow,magenta);
+}
+#gradient5{
+  background: repeating-linear-gradient(-30deg,white, yellow,black 50px);
+}
+#gradient6{
+  background: repeating-radial-gradient(closest-side at 50% 50%, yellow, black);
+}
+#gradient7{
+  background: linear-gradient(to right, 
+  red 15%,
+  orange 15% 30%,
+  yellow 30% 45%,
+  green 45% 60%,
+  blue 60% 75%,
+  indigo 75% 90%,
+  violet 90%);
 }
